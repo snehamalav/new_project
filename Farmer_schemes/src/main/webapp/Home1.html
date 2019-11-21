@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      
+<div class="header">
+  <h1>Farmers Portal</h1>
+ <h2>Scheme For Farmers</h2> 
+</div>
+
+<div class="topnav">
+  <a href="Home1.html">Home</a>
+  <!-- <a href="Farmerreg.html">Register</a> -->
+  <div class="dropdown">
+        <button class="dropbtn">Register
+                 </button>
+        <div class="dropdown-content">
+          <a href="Farmerregister.do">Farmer</a>
+          <a href="Bidderregister.do">Bidder</a>
+        </div>
+    </div> 
+  <!-- <a href="logint.html">Login</a> -->
+  <div class="dropdown">
+        <button class="dropbtn">Login
+                 </button>
+        <div class="dropdown-content">
+          <a href="Admin.html">Admin</a>
+          <a href="login1.do">Farmer</a>
+          <a href="login2.do">Bidder</a>
+        </div>
+    </div> 
+  <a href="About.html">About Us</a>
+  <a href="Contact.html">Contact Us</a>
+  
+  <!-- <a href="#" style="float:right">Link</a> -->
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Farmer Gallery</h2>
+      <h5>This website belongs to Department of Agriculture & Cooperation and Farmers Welfare,
+        Ministry of Agriculture and Farmers Welfare, Government of India </h5>
+        
+        <div class="images" style="max-width:500px">
+          <center>
+            <img class="mySlides" src="'../../img/q.jpg" style="width:100%">
+            <img class="mySlides" src="'../../img/r.jpg" style="width:100%">
+            <img class="mySlides" src="'../../img/w.jpg" style="width:100%">
+            <img class="mySlides" src="'../../img/y.jpg" style="width:100%">
+          </center>
+         </div>
+         <div class="images">
+            <div class="Fimages">
+              <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">Prev</button>
+              <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next</button>
+              </div>
+              </div>
+       
+    </div>
+
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Related Links</h2>
+      
+      <ol><a target="_blank" href="https://pmfby.gov.in/">Pradhan Mantri Fasal Bima Yojana</a></ol>
+      <ol><a target="_blank" href="https://rkvy.nic.in/reportmenu/reportnavigation.html">RKVY Projects</a></ol>
+      <ol><a target="_blank" href="https://mkisan.gov.in/">mkisan</a></ol>
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <li><a target="_blank" href="https://india.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img2.jpg"></a></li>
+    <li><a target="_blank" href="https://digitizeindia.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img3.jpg"></a></li>
+    <li><a target="_blank" href="https://data.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img4.jpg"></a></li>
+    <li><a target="_blank" href="https://meity.gov.in/"><img alt="" src="https://enam.gov.in/web/assest/images/footer/img5.jpg"></a></li>
+  </div>
+  
+</div>
+
+<script>
+    var slideIndex = 1;
+              showDivs(slideIndex);
+
+          function plusDivs(n) {
+         showDivs(slideIndex += n);
+            }
+
+          function currentDiv(n) {
+            showDivs(slideIndex = n);
+           }
+
+            function showDivs(n) {
+                    var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}    
+                 if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                        }
+              for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" w3-red", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+                     dots[slideIndex-1].className += " w3-red";
+                 }
+                 </script>
+</body>
+</html>
